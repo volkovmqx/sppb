@@ -1,3 +1,4 @@
+import os, time, RPi.GPIO as GPIO
 os.system('sudo gphoto2 --auto-detect')
 arduino = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
 arduino.open()
