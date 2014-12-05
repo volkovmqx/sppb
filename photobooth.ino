@@ -29,7 +29,7 @@ void setup() {
 }
 
 void loop() {
-  //nestannou el boutton activé w nab3thou 3al serial go lel raspberry
+  //waiting for the "GO" signal , from the arduino to start working
  int test = digitalRead(0); 
  delay(2);
  int test2 = digitalRead(0);
@@ -94,7 +94,7 @@ void loop() {
    }
  }
  
- //ba3ed matkamel el raspberry tab3eth finish fil serial
+ //After the raspberry finishe it works, it should send a signal to the arduino
  if(finish==true) {
     digitalWrite(2, 1);
  digitalWrite(3, 1);
