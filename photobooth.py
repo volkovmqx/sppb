@@ -15,7 +15,10 @@ while 1:
 	reponse = arduino.readline()
 	if reponse :
 		print reponse
-		os.system('sudo ./usbreset /dev/bus/usb/001/012')
+         	os.system('sudo ./usbreset /dev/bus/usb/001/012')
+		"""
+		a usb reset script written in C, that you will compile in order to fix some bugs in the raspberry pi
+		"""
 		os.system('sudo gphoto2 --capture-image-and-download --filename="photobooth.JPG"') 
 
 		fg = 'logo.png'
